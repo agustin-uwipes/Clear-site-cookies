@@ -18,7 +18,7 @@ chrome.action.onClicked.addListener(async (tab) => {
     await chrome.browsingData.remove({
         origins: [url.origin]
     }, {
-        cache: true,
+        // cache: true,
         cookies: true,
         // indexedDB: true,
         // localStorage: true,
