@@ -26,5 +26,18 @@ chrome.action.onClicked.addListener(async (tab) => {
         // cacheStorage: true
     });
 
-    chrome.tabs.reload(tab.id);
+    chrome.action.setBadgeText({
+        text: "✅",
+        tabId: tab.id
+    });
+
+    setTimeout(() => {
+        chrome.action.setBadgeText({
+            text: "",
+            tabId: tab.id
+        });
+
+        chrome.tabs.reload(tab.id);
+    }, 500);
+
 });
