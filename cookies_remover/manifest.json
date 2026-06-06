@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Clear osTickets cookies",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "permissions": [
     "cookies",
     "browsingData",
@@ -15,9 +15,7 @@
     "default_title": "Clear osTickets cookies",
     "default_icon": {
       "16": "icon16.png",
-      "32": "icon32.png",
-      "192": "icon192.png",
-      "512": "icon512.png"
+      "32": "icon32.png"
     }
   },
   "background": {
@@ -25,8 +23,6 @@
   },
   "icons": {
     "16": "icon16.png",
-    "32": "icon32.png",
-    "192": "icon192.png",
-    "512": "icon512.png"
+    "32": "icon32.png"
   }
 }
