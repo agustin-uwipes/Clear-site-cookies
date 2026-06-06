@@ -1,3 +1,23 @@
+const GITHUB_URL = "https://github.com/agustin-uwipes/Clear-site-cookies/releases/latest";
+
+chrome.runtime.onInstalled.addListener(() => {
+    const version = chrome.runtime.getManifest().version;
+
+    chrome.contextMenus.create({
+        id: "check-updates",
+        title: `Check for updates (v${version})`,
+        contexts: ["action"]
+    });
+});
+
+chrome.contextMenus.onClicked.addListener((info) => {
+    if (info.menuItemId === "check-updates") {
+        chrome.tabs.create({
+            url: GITHUB_URL
+        });
+    }
+});
+
 chrome.action.onClicked.addListener(async (tab) => {
     const url = new URL(tab.url);
 

@@ -1,11 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Clear osTickets cookies",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "permissions": [
     "cookies",
     "browsingData",
-    "tabs"
+    "tabs",
+    "contextMenus"
   ],
   "host_permissions": [
     "<all_urls>"
