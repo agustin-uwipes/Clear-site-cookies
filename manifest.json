@@ -15,7 +15,9 @@
     "default_title": "Clear osTickets cookies",
     "default_icon": {
       "16": "icon16.png",
-      "32": "icon32.png"
+      "32": "icon32.png",
+      "192": "icon192.png",
+      "512": "icon512.png"
     }
   },
   "background": {
@@ -23,6 +25,8 @@
   },
   "icons": {
     "16": "icon16.png",
-    "32": "icon32.png"
+    "32": "icon32.png",
+    "192": "icon192.png",
+    "512": "icon512.png"
   }
 }
